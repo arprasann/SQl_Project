@@ -1,0 +1,781 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>51/1/1</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Mar 05 07:51:05 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (461 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Selenium.Demo5.CeditTestCase()'><b>CeditTestCase</b><br>Test class: Selenium.Demo5<br/>
+<a href="#Output-116405378" onClick='toggleBox("Output-116405378", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-116405378" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-116405378">
+Edit<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at Selenium.Demo5.CeditTestCase(Demo5.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace116405378", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace116405378'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at Selenium.Demo5.CeditTestCase(Demo5.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Selenium.Demo5@7adda9cc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Selenium.Demo6.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-590845366" onClick='toggleBox("Output-590845366", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-590845366" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-590845366">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.deleteTestCase()'><b>deleteTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-757004314" onClick='toggleBox("Output-757004314", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-757004314" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-757004314">
+Delete<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo3.createTestCase()'><b>createTestCase</b><br>Test class: Selenium.Demo3<br/>
+<a href="#Output-543846639" onClick='toggleBox("Output-543846639", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-543846639" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-543846639">
+Create<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo3@3967e60c</td></tr>
+<tr>
+<td title='Selenium.Demo1.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo1<br/>
+<a href="#Output-30578394" onClick='toggleBox("Output-30578394", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-30578394" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-30578394">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo1@3cc2931c</td></tr>
+<tr>
+<td title='Selenium.Demo6.createTestCase()'><b>createTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-921420643" onClick='toggleBox("Output-921420643", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-921420643" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-921420643">
+Create<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-1276261147" onClick='toggleBox("Output-1276261147", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1276261147" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1276261147">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-2009221452" onClick='toggleBox("Output-2009221452", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2009221452" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2009221452">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-257513673" onClick='toggleBox("Output-257513673", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-257513673" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-257513673">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.deleteTestCase()'><b>deleteTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-1613095350" onClick='toggleBox("Output-1613095350", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1613095350" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1613095350">
+Delete<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo2.createTestCase()'><b>createTestCase</b><br>Test class: Selenium.Demo2<br/>
+<a href="#Output-869601985" onClick='toggleBox("Output-869601985", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-869601985" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-869601985">
+Create<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo2@1f0f1111</td></tr>
+<tr>
+<td title='Selenium.Demo4.createTestCase()'><b>createTestCase</b><br>Test class: Selenium.Demo4<br/>
+<a href="#Output-1976870338" onClick='toggleBox("Output-1976870338", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1976870338" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1976870338">
+Create<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo4@20d28811</td></tr>
+<tr>
+<td title='Selenium.Demo4.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo4<br/>
+<a href="#Output-1083021083" onClick='toggleBox("Output-1083021083", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1083021083" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1083021083">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo4@20d28811</td></tr>
+<tr>
+<td title='Selenium.Demo6.createTestCase()'><b>createTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-1136419747" onClick='toggleBox("Output-1136419747", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1136419747" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1136419747">
+Create<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-561959774" onClick='toggleBox("Output-561959774", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-561959774" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-561959774">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-1199262943" onClick='toggleBox("Output-1199262943", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1199262943" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1199262943">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-1051876890" onClick='toggleBox("Output-1051876890", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1051876890" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1051876890">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.createTestCase()'><b>createTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-1165303897" onClick='toggleBox("Output-1165303897", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1165303897" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1165303897">
+Create<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-18242360" onClick='toggleBox("Output-18242360", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-18242360" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-18242360">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.createTestCase()'><b>createTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-1785507932" onClick='toggleBox("Output-1785507932", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1785507932" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1785507932">
+Create<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo1.deleteTestCase()'><b>deleteTestCase</b><br>Test class: Selenium.Demo1<br/>
+<a href="#Output-2003496028" onClick='toggleBox("Output-2003496028", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2003496028" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2003496028">
+Delete<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo1@3cc2931c</td></tr>
+<tr>
+<td title='Selenium.Demo6.deleteTestCase()'><b>deleteTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-587153993" onClick='toggleBox("Output-587153993", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-587153993" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-587153993">
+Delete<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-2110756088" onClick='toggleBox("Output-2110756088", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2110756088" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2110756088">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo.BtestCase2()'><b>BtestCase2</b><br>Test class: Selenium.Demo<br/>
+<a href="#Output-428566321" onClick='toggleBox("Output-428566321", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-428566321" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-428566321">
+TestCase-2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo@5cee5251</td></tr>
+<tr>
+<td title='Selenium.Demo3.deleteTestCase()'><b>deleteTestCase</b><br>Test class: Selenium.Demo3<br/>
+<a href="#Output-1011279482" onClick='toggleBox("Output-1011279482", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1011279482" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1011279482">
+Delete<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo3@3967e60c</td></tr>
+<tr>
+<td title='Selenium.Demo2.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo2<br/>
+<a href="#Output-1647809929" onClick='toggleBox("Output-1647809929", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1647809929" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1647809929">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo2@1f0f1111</td></tr>
+<tr>
+<td title='Selenium.Demo.CtestCase1()'><b>CtestCase1</b><br>Test class: Selenium.Demo<br/>
+<a href="#Output-2087258327" onClick='toggleBox("Output-2087258327", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2087258327" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2087258327">
+TEstCase1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo@5cee5251</td></tr>
+<tr>
+<td title='Selenium.Demo6.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-823723302" onClick='toggleBox("Output-823723302", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-823723302" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-823723302">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo.AtestCase3()'><b>AtestCase3</b><br>Test class: Selenium.Demo<br/>
+<a href="#Output-945288723" onClick='toggleBox("Output-945288723", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-945288723" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-945288723">
+TestCase-3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo@5cee5251</td></tr>
+<tr>
+<td title='Selenium.Demo6.createTestCase()'><b>createTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-943870983" onClick='toggleBox("Output-943870983", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-943870983" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-943870983">
+Create<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo3.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo3<br/>
+<a href="#Output-208866101" onClick='toggleBox("Output-208866101", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-208866101" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-208866101">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo3@3967e60c</td></tr>
+<tr>
+<td title='Selenium.Demo6.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-328827614" onClick='toggleBox("Output-328827614", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-328827614" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-328827614">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo1.createTestCase()'><b>createTestCase</b><br>Test class: Selenium.Demo1<br/>
+<a href="#Output-1534745514" onClick='toggleBox("Output-1534745514", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1534745514" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1534745514">
+Create<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo1@3cc2931c</td></tr>
+<tr>
+<td title='Selenium.Demo6.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-1714078840" onClick='toggleBox("Output-1714078840", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1714078840" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1714078840">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-1732502545" onClick='toggleBox("Output-1732502545", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1732502545" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1732502545">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo5.LcreateTestCase()'><b>LcreateTestCase</b><br>Test class: Selenium.Demo5<br/>
+<a href="#Output-1541049864" onClick='toggleBox("Output-1541049864", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1541049864" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1541049864">
+Create<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo5@7adda9cc</td></tr>
+<tr>
+<td title='Selenium.Demo4.deleteTestCase()'><b>deleteTestCase</b><br>Test class: Selenium.Demo4<br/>
+<a href="#Output-1434234664" onClick='toggleBox("Output-1434234664", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1434234664" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1434234664">
+Delete<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo4@20d28811</td></tr>
+<tr>
+<td title='Selenium.Demo6.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-1770642014" onClick='toggleBox("Output-1770642014", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1770642014" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1770642014">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.createTestCase()'><b>createTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-1010953501" onClick='toggleBox("Output-1010953501", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1010953501" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1010953501">
+Create<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.deleteTestCase()'><b>deleteTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-1084502906" onClick='toggleBox("Output-1084502906", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1084502906" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1084502906">
+Delete<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.deleteTestCase()'><b>deleteTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-1279271200" onClick='toggleBox("Output-1279271200", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1279271200" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1279271200">
+Delete<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-52908367" onClick='toggleBox("Output-52908367", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-52908367" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-52908367">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.createTestCase()'><b>createTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-576020159" onClick='toggleBox("Output-576020159", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-576020159" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-576020159">
+Create<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.createTestCase()'><b>createTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-1881561036" onClick='toggleBox("Output-1881561036", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1881561036" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1881561036">
+Create<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.createTestCase()'><b>createTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-887750041" onClick='toggleBox("Output-887750041", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-887750041" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-887750041">
+Create<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-580871917" onClick='toggleBox("Output-580871917", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-580871917" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-580871917">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.createTestCase()'><b>createTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-1423561005" onClick='toggleBox("Output-1423561005", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1423561005" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1423561005">
+Create<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo2.deleteTestCase()'><b>deleteTestCase</b><br>Test class: Selenium.Demo2<br/>
+<a href="#Output-1258084361" onClick='toggleBox("Output-1258084361", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1258084361" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1258084361">
+Delete<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo2@1f0f1111</td></tr>
+<tr>
+<td title='Selenium.Demo6.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-109228794" onClick='toggleBox("Output-109228794", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-109228794" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-109228794">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-1971764991" onClick='toggleBox("Output-1971764991", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1971764991" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1971764991">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-1527953000" onClick='toggleBox("Output-1527953000", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1527953000" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1527953000">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+<tr>
+<td title='Selenium.Demo6.editTestCase()'><b>editTestCase</b><br>Test class: Selenium.Demo6<br/>
+<a href="#Output-945591847" onClick='toggleBox("Output-945591847", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-945591847" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-945591847">
+Edit<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Selenium.Demo6@60d8c9b7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Selenium.Demo5.SdeleteTestCase()'><b>SdeleteTestCase</b><br>Test class: Selenium.Demo5</td>
+<td><div><pre>java.lang.Throwable: Method Demo5.SdeleteTestCase()[pri:0, instance:Selenium.Demo5@7adda9cc] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace366873404", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace366873404'><pre>java.lang.Throwable: Method Demo5.SdeleteTestCase()[pri:0, instance:Selenium.Demo5@7adda9cc] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Selenium.Demo5@7adda9cc</td></tr>
+</table><p>
+</body>
+</html>
